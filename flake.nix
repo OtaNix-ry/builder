@@ -35,7 +35,7 @@
           finalImageTag = "ssh";
         };
 
-        name = "otanix-builder";
+        name = "ghcr.io/otanix-ry/builder";
         tag = "latest";
         created = "now";
 
