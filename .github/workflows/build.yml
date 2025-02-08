@@ -41,6 +41,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: build and push docker image
         run: |
-          nix build .#docker --accept-flake-config -L
+          nix build . --accept-flake-config -L
           docker load < result
           docker push ghcr.io/otanix-ry/builder:latest
